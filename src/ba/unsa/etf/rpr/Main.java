@@ -4,12 +4,21 @@ import java.util.Scanner;
 
 public class Main {
 
+
+    static int sumaCifara(int n){
+        int suma=0;
+        while(n!=0){
+            suma=suma+ n%10;
+            n= n/10;
+        }
+        return suma;
+    }
+
     public static void main(String[] args) {
-        public int brojac=0;
-        public int zbir=0;
         Scanner ulaz = new Scanner(System.in);
         System.out.println("Unesite n: ");
         int n = ulaz.nextInt();
+        System.out.println(sumaCifara(n));
 
     }
 }
