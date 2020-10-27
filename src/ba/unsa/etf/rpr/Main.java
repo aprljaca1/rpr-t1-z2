@@ -18,7 +18,14 @@ public class Main {
         Scanner ulaz = new Scanner(System.in);
         System.out.println("Unesite n: ");
         int n = ulaz.nextInt();
-        System.out.println(sumaCifara(n));
+
+        System.out.println("Brojevi djeljiv sa sumom svojih cifara: " );
+        for(int i=1; i<n; i++){
+            if(i%sumaCifara(i)==0){
+                System.out.println(i);
+            }
+
+        }
 
     }
 }
